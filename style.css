@@ -1,0 +1,130 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width : 100%;
+    height: 150%;
+}
+#main{
+    width : 100%;
+    height: 100vh;
+}
+.top{
+    width : 100%;
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1530906622963-8a60586a49c7?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.top.overlay{
+    position: relative;
+    width : 100%;
+    min-height: inherit;
+    background-color: rgba(245, 239, 239, 0.205) ;
+
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 40%;
+}
+.ltext h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.ltext p{
+    font-weight: 500;
+    font-size: 4vh;
+}
+.middle{
+    display: flex;
+    min-height: 100%;
+    width:100%;
+    min-height: 100vh;
+    background-image: url(https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.rtext{
+    display: grid;
+    width: 100%;
+    min-height: 100%;
+    bottom:100%;
+}
+.rtext h1{
+    font-family: Lucida Handwriting;
+    font-size: 250%;
+    text-align: left;
+    padding: auto;
+}
+.rtext pre{
+    font-family: 'Times New Roman';
+    font-size: 200%;
+    text-align: left;
+    justify-content: space-around;
+    padding: auto;
+    color: black;
+}
+.bottom{
+    width: 100%;
+    min-height: 100%;
+    background-image: url(https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+.texts{
+    display: grid;
+    position: relative;
+    width: 100%;
+    padding: 0 10vh;
+    color: black;
+}
+.texts pre{
+    text-align: center;
+}
+
+
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 50%;
+    }
+    .ltext h1{
+        font-size: 5vh;
+    }
+    .ltext p{
+        font-size: 5vh;
+    }
+    .middle{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext h1{
+        font-size: 50vh;
+    }
+    .rtext pre{
+        font-size: 50vh;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .texts pre{
+        font-size: 50vh;
+        text-align: center;
+    }
+}
